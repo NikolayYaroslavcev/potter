@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add the following line inside the <head> tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <header class="hero-section">
+            <div class="container">
+                <div data-speed=".75" class="header-block">
+                    <h1 class="header-title">harry potter</h1>
+                    <p class="header-text">at your party</p>
+                    <div class="block-content">
+                        <div class="content-imag">
+                            <img class="content-img" src="img/face/one.png" alt="one">
+                            <img src="img/face/two.png" alt="two">
+                            <img src="img/face/three.png" alt="three">
+                        </div>
+                        <p class="content-text">
+                            Realistic characters are sure to amaze your guests
+                        </p>
+                    </div>
+                    <a class="header-button" href="#">book a party</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="gallery">
+
+                        <div data-speed=".9" class="gallery-left">
+                            <img class="gallery-item" src="img/work/1.jpg" alt="alt">
+                            <img class="gallery-item" src="img/work/6.jpg" alt="alt">
+                            <div class="text-block gallery-item">
+                                <h2 class="text-block__h">You may have heard the sounds of spells being cast.</h2>
+                                <p class="text-block__p">The story takes place at the end of the 19th century and tells
+                                    the
+                                    story of
+                                    Hogwarts students.</p>
+                            </div>
+
+                            <img class="gallery-item" src="img/work/2.jpg" alt="alt">
+
+                        </div>
+
+                        <div data-speed="1.1" class="gallery-right">
+                            <div class="text-block gallery-item">
+                                <h2 class="text-block__h">The Hogwarts students of this era are a unique and diverse group.</h2>
+                                <p class="text-block__p">Each with their own strengths and weaknesses. Some are naturally talented at casting spells, while others struggle to keep up. But despite their differences, they all share a common goal: to become the best witches and wizards they can be.</p>
+                            </div>
+
+                            <img class="gallery-item" src="img/work/3.jpg" alt="alt">
+                            <img class="gallery-item" src="img/work/4.jpg" alt="alt">
+                            <img class="gallery-item" src="img/work/5.jpg" alt="alt">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-speed=".75" class="promo-block">
+                <div class=promo-container>
+                    <h2 class="promo-block__title">What's waiting for your children</h2>
+                    <div class="promo-block__info">
+                        <p class="promo-block__text">Agency "Potter" prepared dozens of programs for the organization of
+                            the holiday at home or at school. In the arsenal of "ArchiShow":</p>
+                        <ul class="promo-block__list">
+                            <li class="promo-block__item">A variety of scenarios. From interactive quests and shows to
+                                informative workshops, where your children will learn useful life skills and have a lot
+                                of fun.
+                            </li>
+                            <li class="promo-block__item">Decorations. We know how important the external component of
+                                the holiday is, so for each scenario we have three-dimensional decorations, which will
+                                help to feel the atmosphere of your favorite universe to the end.
+                            </li>
+                            <li class="promo-block__item">Sweet table. We will take into account all the wishes of
+                                parents and children, prepare treats from healthy and natural products, set the table
+                                beautifully and take care of the banquet.
+                            </li>
+                            <li class="promo-block__item">Additional services. You can order the services of a
+                                photographer or videographer to capture the brightest moments forever, get your
+                                celebration celebration piñata, candy bar, beauty bar, organize other activities that
+                                will make the holiday even more impressive and unforgettable.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-speed=".75" class="contact-form">
+                <h2 class="contact-form__title">Contact Us</h2>
+                <form class="form">
+                    <div class="contact-form__group">
+                        <input type="text" id="name" name="name" class="contact-form__input" placeholder=" " required>
+                        <label for="name" class="contact-form__input-label">Name</label>
+                    </div>
+                    <div class="contact-form__group">
+                        <input type="tel" id="phone" name="phone" class="contact-form__input" placeholder=" " required>
+                        <label for="phone" class="contact-form__input-label">Phone Number</label>
+                    </div>
+                    <div class="contact-form__group">
+                        <textarea id="message" name="message" class="contact-form__input" placeholder=" "
+                                  required></textarea>
+                        <label for="message" class="contact-form__input-label textarea-label">Message</label>
+                    </div>
+                    <button type="submit" class="contact-form__submit-btn">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>&copy; 2023 Harry Potter Animator. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+</body>
+</html>
